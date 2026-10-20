@@ -75,11 +75,11 @@ get_header();
     <a href="#">Contact Us</a>
     <a href="#">PDPA</a>
     <a href="#">Privacy Policy Statement</a>
-    <a href="#">Blog</a>
-    <a href="#">Careers</a>
-    <a href="#">Terms of Service</a>
-    <a href="#">Sitemap</a>
-    <a href="#">Twitter</a>
+    <a href="#">Facebook</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Instagram</a>
+    <a href="#">TikTok</a>
+    <a href="#">YouTube</a>
   </nav>
   <p>&copy; 2026 MyRehat</p>
 </footer>
