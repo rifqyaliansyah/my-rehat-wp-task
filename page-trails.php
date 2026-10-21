@@ -63,13 +63,30 @@ get_header();
   </div>
 
   <section class="trails-booking">
-    <h2>
-      <?php echo esc_html(myrehat_test_booking_title()); ?>
-    </h2>
-    <form id="booking-form">
+    <h2><?php echo esc_html(myrehat_test_booking_title()); ?></h2>
+    <form id="booking-form" method="post">
+      <?php wp_nonce_field('trails_booking_action', 'trails_nonce', false); ?>
+      <input type="hidden" name="trails_booking" value="1">
+
       <label>Name <input type="text" name="name" required></label>
       <label>Date <input type="date" name="date" required></label>
-      <p id="trails-total">Total: -</p>
+
+      <fieldset>
+        <legend>Digital Nomad?</legend>
+        <label><input type="radio" name="digital_nomad" value="yes" required> Ya</label>
+        <label><input type="radio" name="digital_nomad" value="no" required> Tidak</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Plan</legend>
+        <label><input type="radio" name="plan" value="daily" checked> Daily</label>
+        <label><input type="radio" name="plan" value="monthly"> Monthly</label>
+      </fieldset>
+
+      <p id="trails-total">Total: RM 350</p>
+
+      <label><input type="checkbox" name="host_terms" value="1" required> I agree to the Host Terms</label>
+
       <button type="submit">Request booking</button>
     </form>
     <div id="trails-confirmation" hidden></div>
@@ -85,7 +102,7 @@ get_header();
     <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
     <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a>
+    <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a>
     <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a>
   </nav>
   <p>&copy; 2026 MyRehat</p>
