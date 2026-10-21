@@ -2,8 +2,13 @@
 /* Template Name: Trails Test Page */
 get_header();
 ?>
+<div class="contact-bar">
+  <a class="contact-wa" href="https://wa.me/60123456789" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  <a class="contact-line" href="https://line.me/ti/p/~myrehat" target="_blank" rel="noopener noreferrer">LINE</a>
+</div>
+
 <header class="site-header-trails">
-  <h1>Hiking Advantures</h1>
+  <h1>Tropic Hiking Trails</h1>
   <p>Find your next trail with MyRehat</p>
   <input id="main-search" type="text" placeholder="Search homepage...">
 </header>
@@ -58,7 +63,9 @@ get_header();
   </div>
 
   <section class="trails-booking">
-    <h2><?php echo esc_html( myrehat_test_booking_title() ); ?></h2>
+    <h2>
+      <?php echo esc_html(myrehat_test_booking_title()); ?>
+    </h2>
     <form id="booking-form">
       <label>Name <input type="text" name="name" required></label>
       <label>Date <input type="date" name="date" required></label>
@@ -74,12 +81,12 @@ get_header();
     <a href="#">FAQ</a>
     <a href="#">Contact Us</a>
     <a href="#">PDPA</a>
-    <a href="#">Privacy Policy Statement</a>
-    <a href="#">Facebook</a>
-    <a href="#">LinkedIn</a>
-    <a href="#">Instagram</a>
-    <a href="#">TikTok</a>
-    <a href="#">YouTube</a>
+    <a href="#">Privacy Policy</a>
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a>
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a>
   </nav>
   <p>&copy; 2026 MyRehat</p>
 </footer>

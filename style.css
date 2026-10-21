@@ -34,3 +34,30 @@ Text Domain: myrehat-test
   .trails-promo { display: none; }
   .trails-search-row { flex-direction: column; }
 }
+
+.contact-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: #1a1a1a;
+}
+
+.contact-bar a {
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+}
+
+.contact-wa {
+  background: #25d366;
+}
+
+.contact-line {
+  background: #06c755;
+}
