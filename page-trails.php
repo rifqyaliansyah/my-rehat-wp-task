@@ -68,8 +68,8 @@ get_header();
       <?php wp_nonce_field('trails_booking_action', 'trails_nonce', false); ?>
       <input type="hidden" name="trails_booking" value="1">
 
-      <label>Name <input type="text" name="name" required></label>
-      <label>Date <input type="date" name="date" required></label>
+      <label>Name <input type="text" name="trails_name" required></label>
+      <label>Date <input type="date" name="trails_date" required></label>
 
       <fieldset>
         <legend>Digital Nomad?</legend>

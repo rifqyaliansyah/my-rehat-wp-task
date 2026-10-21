@@ -30,8 +30,8 @@ function myrehat_test_booking_handler()
         wp_send_json_error(array('message' => __('Security check failed. Please reload the page.', 'myrehat-test')), 403);
     }
 
-    $name = isset($_POST['name']) ? sanitize_text_field(wp_unslash($_POST['name'])) : '';
-    $date = isset($_POST['date']) ? sanitize_text_field(wp_unslash($_POST['date'])) : '';
+    $name = isset($_POST['trails_name']) ? sanitize_text_field(wp_unslash($_POST['trails_name'])) : '';
+    $date = isset($_POST['trails_date']) ? sanitize_text_field(wp_unslash($_POST['trails_date'])) : '';
     $nomad = isset($_POST['digital_nomad']) ? sanitize_key(wp_unslash($_POST['digital_nomad'])) : '';
     $plan = isset($_POST['plan']) ? sanitize_key(wp_unslash($_POST['plan'])) : '';
     $terms = isset($_POST['host_terms']);
@@ -57,7 +57,7 @@ function myrehat_test_booking_handler()
         HOUR_IN_SECONDS
     );
 
-    wp_send_json_success(array('name' => $name));
+    wp_send_json_success(array('name' => $name), 200);
 }
 
 add_action('myrehat_trail_viewed', 'myrehat_test_count_view', 10, 2);
