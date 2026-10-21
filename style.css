@@ -15,7 +15,23 @@ Text Domain: myrehat-test
 .trails-main { max-width: 1000px; margin: 0 auto; padding: 20px; }
 .trails-search-row { display: flex; gap: 10px; margin-bottom: 16px; }
 .trails-search-row input, .trails-search-row select { padding: 10px; font-size: 15px; flex: 1; }
-.trails-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 14px; }
+.trails-cards { 
+  display: grid; 
+  grid-template-columns: 1fr; 
+  gap: 14px; 
+}
+
+@media (min-width: 640px) { 
+  .trails-cards { 
+    grid-template-columns: repeat(2, 1fr); 
+  } 
+}
+
+@media (min-width: 1000px) { 
+  .trails-cards { 
+    grid-template-columns: repeat(3, 1fr); 
+  } 
+}
 .trail-card { border: 1px solid #ddd; border-radius: 8px; padding: 14px; background: #fff; }
 .trail-card h3 { font-size: 17px; margin-bottom: 6px; }
 .trail-card .price { font-weight: bold; color: #0c6b4f; }
