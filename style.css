@@ -8,7 +8,6 @@ Version: 1.0.0
 Text Domain: myrehat-test
 */
 
-/* Trails test page styles */
 .site-header-trails { background: #0c6b4f; color: #fff; padding: 32px 20px; text-align: center; }
 .site-header-trails h1 { font-size: 32px; color: #fff; }
 .site-header-trails #main-search { margin-top: 14px; padding: 10px; font-size: 15px; width: min(420px, 90%); }
@@ -16,8 +15,8 @@ Text Domain: myrehat-test
 .trails-main { max-width: 1000px; margin: 0 auto; padding: 20px; }
 .trails-search-row { display: flex; gap: 10px; margin-bottom: 16px; }
 .trails-search-row input, .trails-search-row select { padding: 10px; font-size: 15px; flex: 1; }
-.trails-cards { display: flex; gap: 14px; }
-.trail-card { border: 1px solid #ddd; border-radius: 8px; padding: 14px; min-width: 320px; background: #fff; }
+.trails-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 14px; }
+.trail-card { border: 1px solid #ddd; border-radius: 8px; padding: 14px; background: #fff; }
 .trail-card h3 { font-size: 17px; margin-bottom: 6px; }
 .trail-card .price { font-weight: bold; color: #0c6b4f; }
 #trails-no-results { color: #a00; margin: 12px 0; }
@@ -31,7 +30,6 @@ Text Domain: myrehat-test
 .trails-footer nav { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-bottom: 10px; }
 .trails-footer a { color: #ccc; }
 @media (max-width: 600px) {
-  .trails-promo { display: none; }
   .trails-search-row { flex-direction: column; }
 }
 
